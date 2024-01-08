@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Alert</title>
+</head>
+<body>
+
+<script>
+  // Get the current hour from the Date object
+  var currentHour = new Date().getHours();
+
+  // Define a function to display a greeting based on the time
+  function displayGreeting() {
+    var greeting;
+
+    if (currentHour >= 0 && currentHour < 12) {
+      greeting = "Good morning!";
+    } else if (currentHour >= 12 && currentHour < 18) {
+      greeting = "Good afternoon!";
+    } else {
+      greeting = "Good evening!";
+    }
+
+    // Display an alert box with the greeting message
+    alert(greeting);
+  }
+
+  // Call the function to display the greeting when the page loads
+  displayGreeting();
+</script>
+
+</body>
+</html>
